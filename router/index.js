@@ -1,10 +1,8 @@
 const { Router } = require("express");
 const router = Router();
 
-router.all("*", 
-  (req, res) => res.status(404).json({
-    error: "Not Found"
-  })
-);
+router.get("/", (req, res) => {
+  res.send("Hello World");
+});
 
 module.exports = router;

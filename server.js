@@ -4,10 +4,6 @@ const router = require("./router");
 const errorHandler = require("./src/error-handler");
 const app = express();
 
-if (APP_ENV === "dev") {
-  app.use(require("morgan")("dev"));
-}
-
 app.use(express.json());
 
 app.use(router);

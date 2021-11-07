@@ -1,6 +1,6 @@
 const { APP_ENV, PORT } = require("./config");
 const express = require("express");
-const router = require("./router");
+const router = require("./routes");
 const errorHandler = require("./src/error-handler");
 const app = express();
 

@@ -4,7 +4,6 @@ const router = require("./router");
 const errorHandler = require("./src/error-handler");
 const app = express();
 
-app.use(express.json());
 app.use(errorHandler);
 app.use(router);
 
